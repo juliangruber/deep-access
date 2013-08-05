@@ -3,6 +3,10 @@
 
 Access nested object properties via strings.
 
+[![build status](https://secure.travis-ci.org/juliangruber/deep-access.png)](http://travis-ci.org/juliangruber/deep-access)
+
+[![testling badge](https://ci.testling.com/juliangruber/deep-access.png)](https://ci.testling.com/juliangruber/deep-access)
+
 ## Example
 
 ```js
