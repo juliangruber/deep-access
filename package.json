@@ -1,0 +1,33 @@
+{
+  "name": "deep-access",
+  "description": "Access nested object properties via strings",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/juliangruber/deep-access.git"
+  },
+  "homepage": "https://github.com/juliangruber/deep-access",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "tape": "~1.0.4"
+  },
+  "keywords": [
+    "deep",
+    "object",
+    "access",
+    "property",
+    "utility",
+    "nested",
+    "string"
+  ],
+  "author": {
+    "name": "Julian Gruber",
+    "email": "mail@juliangruber.com",
+    "url": "http://juliangruber.com"
+  },
+  "license": "MIT"
+}
