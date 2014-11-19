@@ -1,7 +1,7 @@
 
 # deep-access
 
-Access nested object properties via strings.
+Access nested object properties via strings, with existential operator (`?`) support.
 
 [![build status](https://secure.travis-ci.org/juliangruber/deep-access.png)](http://travis-ci.org/juliangruber/deep-access)
 
@@ -26,14 +26,21 @@ console.log(deep(obj, 'foo'));
 
 console.log(deep(obj, 'bar.baz.beep'));
 // => "boop"
+
+console.log(deep(obj, 'foo.beep.boop'));
+// throws
+
+console.log(deep(obj, 'foo.beep?.boop'));
+// => undefined
 ```
 
 ## API
 
 ### deep(obj, prop)
 
-Access `obj`'s property `prop`. The property string may contain key names
-and dots.
+Access `obj`'s property `prop`. The property string may contain key names, dots
+and exclamation marks. If a key ends with an exclamantion mark but doesn't
+exist, the algorithm aborts and returns what it last got.
 
 ## Installation
 
