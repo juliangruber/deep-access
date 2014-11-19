@@ -39,7 +39,7 @@ console.log(deep(obj, 'foo.beep?.boop'));
 ### deep(obj, prop)
 
 Access `obj`'s property `prop`. The property string may contain key names, dots
-and exclamation marks. If a key ends with an exclamantion mark but doesn't
+and question marks. If a key ends with an question mark but doesn't
 exist, the algorithm aborts and returns what it last got.
 
 ## Installation
